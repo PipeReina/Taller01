@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img//JS_icon.png">
+    <title>Palabras</title>
+</head>
+<body class="palabras">
+    <div  class="salir">
+        <a href="index.html"><img src="img/flecha-hacia-atras.png" alt="" srcset=""></a>
+    </div>
+    <div class="elecPalabra">
+        <div class="regisPalabra">
+            <label>Ingresa Palabra</label>
+            <input type="text" id="palabra">
+        </div>
+        <div class="eleccionPa">
+            <button class="b1" onclick="abrirPA('largo');">Largo de Palabra</button>
+            <button class="b2" onclick="abrirPA('Meyus');">Palabra En Mayusculas</button>
+            <button class="b3" onclick="abrirPA('Minus');">Palabra En Minusculas</button>
+            <button class="b4" onclick="abrirPA('Primer');">Primer caracte de la Palabra</button>
+        </div>
+    </div>
+    <div class="divModal" id="divModal">
+        <div class="modal-close" id="modal">
+            <p class="cerrar" id="cerrar" onclick="cerrarPA();">X</p>
+            <div class="modalTextRespuesta" name="Cuadrado1" id="div1"value=cuadrado>
+                <h1 class="h1-">El resultado de su peticion es</h1>
+                <h1 id="peticion"></h1>
+            </div>
+        </div>
+    </div>
+    <script src="js/Palabra.js"></script>
+</body>
+</html>
