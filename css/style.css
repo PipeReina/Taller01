@@ -921,6 +921,8 @@ a{
     grid-template-columns:45% 10% 45%;
 }
 
+/* -----------Triangulos------------ */
+
 .Triangulo{
         height: 600px;
         display: grid;
@@ -934,6 +936,129 @@ a{
     display: grid;
     grid-template-rows:100%;
     grid-template-columns: 100%;
+}
+.regisTriangu{
+    text-align: center;
+    position: relative;
+    background: radial-gradient(circle, #3265aa, #4b227f);
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 30px white;
+    display: grid;
+    grid-template-columns: 5% 42.5% 5% 42.5% 5% ;
+    grid-template-rows: 20px 80px 20px 140px 20px 40px auto 20px;
+
+}
+.regisTriangu:before, .regisTriangu:after{
+    content: "";
+    position: absolute;
+    left: -8px;
+    top:-8px;
+    background: linear-gradient(120deg, #00fbff, #e100ff, #00fbff, #e100ff, #00fbff, #e100ff, #00fbff, #e100ff);
+    background-size: 500%;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    z-index: -1;
+    animation: BGgradient 2s ease infinite;
+    
+}
+.regisTriangu:after{
+    filter: brightness(1.4);
+    filter: drop-shadow(16px 16px 20px rgb(248,220,97));
+    filter: blur(15px);
+}
+.ingreTriangu{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 50%;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+}
+.ingreTriangu label{
+    font-size: 60px;
+    margin: 0%;
+    font-family: js;
+    text-shadow: 0 0 10px rgb(0, 0, 0);    
+    color: #fff; 
+}
+.ingreTriangu input{
+    font-size: 30px;
+    border: 2px solid white;
+    transition: .9s ease all;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.582);
+    color: #fff;
+    padding: 0 20px;
+
+}
+.ingreTriangu input:focus{
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom, #c93fc4, #2ec4c7);
+  border-image-slice: 1;
+  outline: none;
+}
+.MostrarTri{
+    display: grid;
+    grid-template-columns:33% 33% 33%;
+    grid-template-rows: 25% 25% 50%;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.MostrarTri input{
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid white;
+    transition: .9s ease all;
+    height: 50px;
+    margin: 0 10%;
+    background-color: rgba(0, 0, 0, 0.582);
+    color: #fff;
+}
+.MostrarTri input:focus{
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom, #c93fc4, #2ec4c7);
+  border-image-slice: 1;
+  outline: none;
+}
+.MostrarTri label{
+    font-size: 40px;
+    margin: 0%;
+    font-family: js;
+    text-shadow: 0 0 10px rgb(0, 0, 0);    
+    color: #fff; 
+}
+.MostrarTri .botonTem{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+}
+.botonTem button{
+    background-color: #ffffff80;
+    border: 0;
+    height: 50px;
+    width: 40%;
+    transition: .4s ease all;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to left, #c93fc4, #2ec4c7);
+    border-image-slice: 1;
+    font-size: 20px;
+    text-shadow: 2px 0px 2px rgb(83, 83, 83);
+    
+}
+.botonTem button:hover{
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+    border: 2px solid #fff;
 }
 
 @media screen and (max-width: 801px){
