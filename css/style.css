@@ -1061,6 +1061,135 @@ a{
     border: 2px solid #fff;
 }
 
+/* --------------profes------- */
+.Profes{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: 50px 100px auto 200px 50px;
+}
+.ProfesTodo{
+grid-column-start: 2;
+grid-row-start: 2;
+grid-row-end: 5;
+display: grid;
+grid-template-rows:100%;
+grid-template-columns: 100%;
+}
+.ProfesElec{
+text-align: center;
+position: relative;
+background: radial-gradient(circle, #3265aa, #4b227f);
+height: 100%;
+width: 100%;
+box-shadow: 0 0 30px white;
+display: grid;
+grid-template-columns: 5% 42.5% 5% 42.5% 5% ;
+grid-template-rows: 20px 80px 20px 140px 20px 40px auto auto 20px;
+
+}
+.ProfesElec:before, .ProfesElec:after{
+content: "";
+position: absolute;
+left: -8px;
+top:-8px;
+background: linear-gradient(120deg, #00fbff, #e100ff, #00fbff, #e100ff, #00fbff, #e100ff, #00fbff, #e100ff);
+background-size: 500%;
+width: calc(100% + 16px);
+height: calc(100% + 16px);
+z-index: -1;
+animation: BGgradient 2s ease infinite;
+
+}
+.ProfesElec:after{
+filter: brightness(1.4);
+filter: drop-shadow(16px 16px 20px rgb(248,220,97));
+filter: blur(15px);
+}
+.ingreProfe{
+display: grid;
+grid-template-columns:100%;
+grid-template-rows: 50%;
+text-align: center;
+grid-column-start: 2;
+grid-column-end: 5;
+grid-row-start: 2;
+}
+.ingreProfe label{
+font-size: 60px;
+margin: 0%;
+font-family: js;
+text-shadow: 0 0 10px rgb(0, 0, 0);    
+color: #fff; 
+}
+.ingreProfe input{
+font-size: 30px;
+border: 2px solid white;
+transition: .9s ease all;
+height: 50px;
+background-color: rgba(0, 0, 0, 0.582);
+color: #fff;
+padding: 0 20px;
+
+}
+.ingreProfe input:focus{
+border: 2px solid transparent;
+border-image: linear-gradient(to bottom, #c93fc4, #2ec4c7);
+border-image-slice: 1;
+outline: none;
+}
+.MostrarProfes{
+display: grid;
+grid-template-columns:33% 33% 33%;
+grid-template-rows: 25% 25% 50%;
+text-align: center;
+grid-column-start: 2;
+grid-column-end: 5;
+grid-row-start: 4;
+grid-row-end: 8;
+justify-content: center;
+align-items: center;
+color: #fff;
+}
+.MostrarProfes select{
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid white;
+    transition: .9s ease all;
+    height: 50px;
+    margin: 0 10%;
+    background-color: rgba(0, 0, 0, 0.582);
+    color: #fff;
+}
+.MostrarProfes select:focus{
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom, #c93fc4, #2ec4c7);
+  border-image-slice: 1;
+  outline: none;
+}
+.MostrarProfes label{
+    font-size: 40px;
+    margin: 0%;
+    font-family: js;
+    text-shadow: 0 0 10px rgb(0, 0, 0);    
+    color: #fff; 
+}
+.MostrarProfes .botonTem{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+}
+.apareceProfe{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    color: #fff;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 45% 10% 45%;
+}
 @media screen and (max-width: 801px){
     
     .index{
