@@ -8,7 +8,9 @@ const expresiones = {
 	doc: /^[0-9]{5,40}$/, 
 	password: /^.{10,30}$/, 
 	correo: /^[a-zA-Z0-9_.+-]+@misena.edu.co$/,
-	fechaNaci:/^2002+[0-9\s\-]{1,40}$/, 
+	fechaNaci:/^199+[0-9\s\-]{1,40}$/,
+	fechaNaci1:/^2001+[0-9\s\-]{1,40}$/,
+	fechaNaci2:/^2002+[0-9\s\-]{1,40}$/,
 }
 
 const campos={
@@ -94,7 +96,7 @@ const validarFormulario = (e) => {
             }
         break;
         case "FechaNaci":
-            if(expresiones.fechaNaci.test(e.target.value)){
+            if(expresiones.fechaNaci.test(e.target.value) || expresiones.fechaNaci1.test(e.target.value) || expresiones.fechaNaci2.test(e.target.value)){
                 document.getElementById('grupo_FechaNaci').classList.remove('formulario_grupo-incorrecto');
                 document.getElementById('grupo_FechaNaci').classList.add('formulario_grupo-correcto');
                 document.querySelector('#grupo_FechaNaci i').classList.add('fa-check-circle');
