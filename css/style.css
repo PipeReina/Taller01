@@ -1305,6 +1305,67 @@ grid-row-start: 2;
         color: #fff; 
     }
 
+    .Validaciones .segun{
+        grid-column-start: 3;
+
+    }
+
+    .Validaciones .terce{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .Validaciones .terce input{
+        height: 15%;
+        width: 15%;
+    }
+    .Validaciones form i{
+        color: rgba(255, 72, 72, 0.9);
+        font-size: 20px;
+    }
+    .Validaciones form p {
+        font-size: 20px;
+        color: rgba(248, 2, 2, 0.9);
+        background-color: rgba(255, 255, 255, 0.664);
+        border-radius: 2px;
+        box-shadow: 2px 2px 10px black ;
+        padding: 9px;
+        font-family: js;
+        font-weight: 100;
+    }
+
+    .formulario__input-error{
+        font-size: 20px;
+        margin-bottom: 10px;
+        display: none;
+        background-color: #bb2929;
+    }
+    
+    
+    .formulario__input-error-activo{
+        display: block;
+        color: #fff;
+    }
+    
+    .formulario__validacion-estado{
+        opacity: 0;
+    }
+    
+    .formulario__mensaje{
+        background-color: #f66060;
+        height: 40px;    
+        line-height: 40px;
+        display: none;
+    }
+    .formulario__mensaje-activo{
+        display: block;
+    }
+    .formulario__mensaje-exito{
+        color: #49af3c;
+        display: none;
+    }
+    .formulario__mensaje-exito-activo{
+        display: none;
+    }
 /* ---------validacion Cambio------ */
 
     .formulario_grupo-correcto .formulario__validacion-estado{
@@ -1323,7 +1384,6 @@ grid-row-start: 2;
     .formulario_grupo-incorrecto .roltext1{
         border: 2px solid #bb2929;
     }
-    
     
 @media screen and (max-width: 801px){
     
