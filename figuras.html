@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/JS_icon.png">
+    <title>Figuras</title>
+</head>
+<script>
+
+</script>
+<body class="figura">
+    <div class="salir">
+        <a href="index.html"><img src="img/flecha-hacia-atras.png" alt="" srcset=""></a>
+    </div>
+        <div class="titulo">
+        <h1>Elije Figura 🧮</h1>
+    </div>
+    <div class="todasFiguras">
+        <a href="#" class="figu" value="cuadrado" id="hola" onclick="abrir('cuadrado')"><img src="img/cuadrado-JS.png"></a>
+        <a href="#" class="figu" value="circulo" id="hola" onclick="abrir('circulo')"><img src="img/circulo_JS.png"></a>
+        <a href="#" class="figu" value="triangulo" id="hola" onclick="abrir('triangulo')"><img src="img/triangulo_JS.png"></a>
+        <a href="#" class="figu" value="rectangulo" id="hola" onclick="abrir('rectangulo')"><img src="img/rectangulo_JS.png"></a>
+    </div>
+    <div class="divModal" id="divModal">
+        <div class="modal-close" id="modal">
+            <p class="cerrar" id="cerrar" onclick="cerrar();limpiar();">X</p>
+            <div class="modalTextCuadrado-inactivo" name="Cuadrado1" id="div1"value=cuadrado>
+                <label class="laberlCuadrado">Digite Lado</label>
+                <div class="inf">
+                    <input type="number" id="numberCuadrado">
+                    <select id="medicion">
+                        <option>cm</option>
+                        <option>m</option>
+                        <option>km</option>
+                    </select>
+                </div>
+                <div class="resultado">
+                    <p id="Area"></p>
+                    <p id="Peri"></p>
+                </div>
+                <div class="botoncss">
+                    <button class="cuadradoBoton" onclick="cuadrado()">Enviar</button>
+                </div>
+            </div>
+            <div class="modalTextCirculo-inactivo" name="Circulo1" id="div2">
+                <label class="laberlCirculo">Digite Radio</label>
+                <div class="inf">
+                    <input type="number" id="numberCirculo">
+                    <select id="medicionCir">
+                        <option>cm</option>
+                        <option>m</option>
+                        <option>km</option>
+                    </select>
+                </div>
+                <div class="resultado">
+                    <p id="AreaCir"></p>
+                    <p id="PeriCir"></p>
+                </div>
+                <div class="botoncss">
+                    <button class="circuloBoton" onclick="circulo()">Enviar</button>
+                </div>
+            </div>
+            <div class="modalTextTriangulo-inactivo"  name="Triangulo1" id="div3">
+                <div class="infTri">
+                    <label class="laberlTriangulo">Digite Altura</label><br>
+                    <input type="number" id="numberTriangulo"/>
+                </div>
+                <div class="inputBase">
+                    <label class="laberlTriangulo">Digite Base</label><br>
+                    <input type="number" id="numberTriangulo2"/>
+                </div>
+                <div class="ladoTri">
+                    <label class="laberlTriangulo">Digite Lado</label><br>
+                    <input type="number" id="numberTriangulo3"/>
+                </div>
+                <div class="mediTrian">
+                    <label class="laberlTriangulo">Medida</label><br>
+                    <select id="medicionTri">
+                        <option>cm</option>
+                        <option>m</option>
+                        <option>km</option>
+                    </select>
+                </div>
+                <div class="resultadoTri">
+                    <p id="AreaTri"></p>
+                    <p id="PeriTri"></p>
+                </div>
+                <div class="botoncssTri">
+                    <button class="trianguloBoton" onclick="triangulo()">Enviar</button>
+                </div>
+            </div>
+            <div class="modalTextRectangulo-inactivo" name="Rectangulo1" id="div4">
+                <div class="infRec">
+                    <label class="laberlTriangulo">Digite Altura</label><br>
+                    <input type="number" id="numberRec"/>
+                </div>
+                <div class="inputBase">
+                    <label class="laberlTriangulo">Digite Base</label><br>
+                    <input type="number" id="numberRec2"/>
+                </div>
+                <div class="ladoRec1">
+                    <label class="laberlTriangulo">Digite Lado 1</label><br>
+                    <input type="number" id="numberRec3"/>
+                </div>
+                <div class="ladoRec2">
+                    <label class="laberlTriangulo">Digite Lado 2</label><br>
+                    <input type="number" id="numberRec4"/>
+                </div>
+                <div class="mediRec">
+                    <label class="laberlTriangulo">Medida</label><br>
+                    <select id="medicionRec">
+                        <option>cm</option>
+                        <option>m</option>
+                        <option>km</option>
+                    </select>
+                </div>
+                <div class="resultadoRec">
+                    <p id="AreaRec"></p>
+                    <p id="PeriRec"></p>
+                </div>
+                <div class="botoncssRec">
+                    <button class="trianguloBoton" onclick="rectangulo()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/figuras.js"></script>
+</body>
+</html>
